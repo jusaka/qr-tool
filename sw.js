@@ -1,5 +1,5 @@
 // Minimal service worker - cache-first for offline support
-const CACHE = 'qr-tool-v2';
+const CACHE = 'qr-tool-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -11,7 +11,9 @@ const ASSETS = [
   '/js/app.js',
   '/lib/qrcode.min.js',
   '/lib/jsqr.min.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png'
 ];
 
 self.addEventListener('install', e => {
